@@ -1,0 +1,32 @@
+<?php
+$user = 'root';
+$pass = '';
+$db='employee';
+$db=mysqli_connect('localhost',$user,$pass,$db) or die("Error in Connection");
+$name=$_POST['name'];
+$id=$_POST['id'];
+$divcode=$_POST['dc'];
+$des=$_POST['desg'];
+$doj=$_POST['doj'];
+$dor=$_POST['dor'];
+$addr=$_POST['addr'];
+$email=$_POST['mail'];
+$mobno=$_POST['mobno'];
+$sprov=$_POST['sprov'];
+$lprov=$_POST['lprov'];
+$gpay=$_POST['gpay'];
+$accno=$_POST['accno'];
+
+$query="INSERT INTO cremp (Name,ID,DCode,Designation,DOJ,DOR,Address,Email,Mobile Number,Service Provider,Landline Provider,Grade Pay,Account Number) 
+VALUES ('$name','$id','$divcode','$des','$doj','$dor','$addr','$email','$mobno','$sprov','$lprov','$gpay','$accno')";
+
+
+ if(mysqli_query($db, $query))
+{
+echo "record inserted";
+}
+else {
+    echo  "Error: " . $query . "<br>" . mysqli_error($db);
+}
+mysqli_close($db);
+?>

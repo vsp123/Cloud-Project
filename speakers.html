@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="karnat.css">
+</head>
+<body>
+<h1 style="text-align:center"><div1><i>Speakers</i></div1></h1>
+
+<div class="w3-bar " style="background-color: #FFFF00">
+            <button class="w3-bar-item w3-button tablink w3-black" onclick="openYear(event,'2019')">2019</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openYear(event,'2018')">2018</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openYear(event,'2016')">2016</button>
+          </div>
+  <br>
+    <i class="fa fa-bars"></i>
+  </a>
+  <div id="2019" class="w3-container w3-border year w3-animate-top">
+  <br>
+            <h2>2019</h2>
+            <div class="row">
+              <div class="column">
+                <a href="../sycon_pos1.html"><img src="191.jpeg" style="width:25%" class="hover-shadow cursor"></a>
+                <a href="../sycon_pos2.html"><img src="192.jpeg" style="width:25%" class="hover-shadow cursor"></a>
+                <a href="../sycon_pos3.html"><img src="193.jpeg" style="width:25%" class="hover-shadow cursor"></a>
+
+              </div>
+              <div class="column">
+                <a href="../sycon_pos4.html"><img src="194.jpeg" style="width:25%"class="hover-shadow cursor"></a>
+                <a href="../sycon_pos5.html"><img src="195.jpeg" style="width:25%"class="hover-shadow cursor"></a>
+              </div>
+            </div>
+          </div>
+            <div id="myModal2019" class="modal">
+                <span class="close cursor" onclick="closeModal2019()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="191.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="192.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="193.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="194.jpeg" style="width:100%">
+                    </div>
+
+                </div>
+
+            </div>
+
+          <div id="2018" class="w3-container w3-border year w3-animate-top" style="display:none">
+            <h2>2018</h2>
+            <!--add pics-->
+
+          </div>
+
+          <div id="2016" class="w3-container w3-border year w3-animate-top" style="display:none">
+            <h2>2016</h2>
+            <!-- Add pics-->
+            <div class="row"> 
+              <div class="column">
+              <img src="1.jpg" style="width:25%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              <img src="2.jpg" style="width:25%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              <img src="3.jpg" style="width:25%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              
+              </div>
+              <div class="column">
+              <img src="4.jpg" style="width:25%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              <img src="5.JPG" style="width:25%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              <img src="6.JPG" style="width:25%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+              </div>  
+              <div class="column">
+              <img src="7.jpg" style="width:25%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" >
+              <img src="8.jpg" style="width:25%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+              <img src="9.jpg" style="width:25%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+              </div>
+              
+            </div>
+
+
+            <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 9</div>
+              <img src="1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 9</div>
+              <img src="2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 9</div>
+              <img src="3.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 9</div>
+              <img src="4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 9</div>
+              <img src="5.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 9</div>
+              <img src="6.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 9</div>
+              <img src="7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 9</div>
+              <img src="8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 9</div>
+              <img src="9.jpg" style="width:100%">
+            </div>
+    
+
+            </div>
+
+          </div>
+
+        </div>
+
+          </div>
+        </div>
+
+        <div class="w3-third w3-center">
+        <i class="fas fa-bullhorn w3-padding-64 w3-margin-right" style="color: #FBDB00"></i>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+function openModal2019() {
+    document.getElementById('myModal2019').style.display = "block";
+}
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+function closeModal2019() {
+  document.getElementById('myModal2019').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+function openYear(evt, yearNo) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("year");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+  }
+  document.getElementById(yearNo).style.display = "block";
+  evt.currentTarget.className += " w3-black";
+}
+</script>
+
+
+
+
+  <hr>
+
+  
+
+
+
+</p>
